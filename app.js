@@ -46,6 +46,7 @@ app.get('/user_details', (req, res) => {
     
     Project.find({}).sort({ _id: 1 }).exec()
     .then(data => {
+      res.setHeader('Content-Language', 'en-US');
       res.send(data);
     })
     .catch(err => {
