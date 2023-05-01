@@ -1,0 +1,41 @@
+[
+    
+    {
+        "src": "https://drive.google.com/uc?export=download&id=1cNMXLK7aguw67zdfqZU8MlD1qMIk1zda",
+        "title": "HTML",
+        "style": "shadow-orange-500"
+    },
+
+    {
+        "src": "https://drive.google.com/uc?export=download&id=1aUKlA2DP8g_HHPplErGFGfIa5eC4w4gg",
+        "title": "CSS",
+        "style": "shadow-blue-500"
+    },
+
+    {
+        "src": "https://drive.google.com/uc?export=download&id=10CEMNsiqlUIuIoM-zSMSv0Mph3O2Kp1T",
+        "title": "JavaScript",
+        "style": "shadow-yellow-400"
+    },
+
+    {
+        "src": "https://drive.google.com/uc?export=download&id=19SdSSr9HzuWRVb0DUmp8JQemvxu6UtV0",
+        "title": "React",
+        "style": "shadow-cyan-600"
+    },
+
+    {
+        "src": "https://drive.google.com/uc?export=download&id=1U3Gvf0rz55BRdzhdSbo8vluZsT5eRyJY",
+        "title": "NodeJs",
+        "style": "shadow-green-400"
+    },
+
+    {
+        "src": "https://drive.google.com/uc?export=download&id=1wW0XHdPdP2L21ZRat05Ia2HiKlwUmm_i",
+        "title": "Tailwind",
+        "style": "shadow-sky-400"
+    }
+
+  ]
+
+  
