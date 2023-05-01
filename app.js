@@ -9,8 +9,7 @@ app.use(cors());
 
 dotenv.config({ path: './config.env'});
 // require('./db/conn');
-const DB = process.env.DATABASE;
-mongoose.connect(DB, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to MongoDB Atlas');
     // Read data from data.json file
@@ -65,7 +64,7 @@ app.get('/user_skills', (req, res) => {
     })
     .catch(err => {
         console.log(err);
-        res.status(500).send('Internal server error 2');
+        res.status(500).send('Internal server error');
     });
 });
 
