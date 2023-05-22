@@ -1,4 +1,3 @@
-const dotenv = require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 // const fs = require('fs');
@@ -7,7 +6,7 @@ const app = express();
 const cors = require('cors');
 app.use(cors());
 
-dotenv.config({ path: './config.env'});
+// dotenv.config({ path: './config.env'});
 // require('./db/conn');
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
