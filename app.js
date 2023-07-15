@@ -1,20 +1,20 @@
 const dotenv = require('dotenv');
 const express = require('express');
 const mongoose = require('mongoose');
-// const fs = require('fs');
-// const path = require('path');
+const fs = require('fs');
+const path = require('path');
 const app = express();
 const cors = require('cors');
 app.use(cors());
 
 dotenv.config({ path: './config.env'});
-// require('./db/conn');
+require('./db/conn');
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to MongoDB Atlas');
     // Read data from data.json file
-    // const rawData = fs.readFileSync(path.join(__dirname, 'skill_data.json'));
-    // const data = JSON.parse(rawData);
+    const rawData = fs.readFileSync(path.join(__dirname, 'data1.json'));
+    const data = JSON.parse(rawData);
     // Insert data into MongoDB Atlas
     // const Project = require('./model/projectSchema');
     // Project.create(data)
@@ -24,14 +24,14 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
     // .catch(err => {
     //   console.error(err);
     // });
-    // const Skill = require('./model/skillsSchema');
-    // Skill.create(data)
-    // .then(() => {
-    //     console.log('created new collection');
-    // })
-    // .catch(err => {
-    //     console.log(err);
-    // });
+    const Skill = require('./model/skillsSchema');
+    Skill.create(data)
+    .then(() => {
+        console.log('created new collection');
+    })
+    .catch(err => {
+        console.log(err);
+    });
   })
   .catch(err => {
     console.error(err);
@@ -40,20 +40,20 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 
 const port = process.env.PORT;
 
-const Project = require('./model/projectSchema');
+// const Project = require('./model/projectSchema');
 
-app.get('/user_details', (req, res) => {
+// app.get('/user_details', (req, res) => {
     
-    Project.find({}).sort({ _id: 1 }).exec()
-    .then(data => {
-      res.setHeader('Content-Language', 'en-US');
-      res.send(data);
-    })
-    .catch(err => {
-      console.error(err);
-      res.status(500).send('Internal server error');
-    });
-  });
+//     Project.find({}).sort({ _id: 1 }).exec()
+//     .then(data => {
+//       res.setHeader('Content-Language', 'en-US');
+//       res.send(data);
+//     })
+//     .catch(err => {
+//       console.error(err);
+//       res.status(500).send('Internal server error');
+//     });
+//   });
 
 const Skill = require('./model/skillsSchema');
 
@@ -73,3 +73,4 @@ app.listen(port, () => {
     console.log(`Server listened on http://localhost:${port}`);
 });
 
+module.exports = app;

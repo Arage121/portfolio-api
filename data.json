@@ -3,13 +3,28 @@
     {   
         "src": "https://images.upgrad.com/8232e452-e30d-4b57-9874-d600b2b02cdd-home.png",
         "dlink": "https://arage121.github.io/scribbler.github.io/",
-        "clink": "https://github.com/Arage121/scribbler.github.io.git"
+        "clink": "https://github.com/Arage121/scribbler.github.io.git",
+        "desc":"This project involves creating the front-end of a blogging website that allow users to register, create posts, edit existing posts, add comments, and like posts. \nThe first part of the project focuses on creating the registration page, and the second involves creating the page where users can create new blog posts.",
+        "name":"Scribbler",
+        "skills":"Html CSS JavaScript"
     },
     
     {
         "src": "https://cdn.upgrad.com/UpGrad/temp/1ba888b6-d078-43a6-afee-13fb9a38a4c0/Screenshot+from+2019-02-18+15-06-26.png",
         "dlink": "https://arage121.github.io/React-Recipe-Finder/",
-        "clink": "https://github.com/Arage121/React-Recipe-Finder.git"  
+        "clink": "https://github.com/Arage121/React-Recipe-Finder.git",
+        "desc":"The Recipe Finder web page is a user-friendly interface that allows users to search for recipes by entering the name of a dish. It utilizes free API to retrieve recipe information in the form of a JSON response. The body of each recipe includes a picture of the meal, ingredients, and the recipe instructions.",
+        "name":"Recipe Finder",
+        "skills":"Html CSS JS ReactJs"  
+    },
+
+    {
+        "src":"https://drive.google.com/uc?export=view&id=1NDPR_j2eCf7uEHjeTFTKMWlqwOmuEGm8",
+        "dlink":"https://main--singular-puffpuff-aa14e9.netlify.app/",
+        "clink":"https://github.com/Arage121/epam-gradebook",
+        "desc":"The Gradebook project is a digital grading book designed to help teachers manage student grades and performance. This app features a sortable and filterable table displaying key data for each student, including their exam grade, rating grade, final grade, and status. This app also includes a statistics section that provides valuable insights into student performance.",
+        "name":"The Gradebook",
+        "skills":"Html CSS JS ReactJs"
     }
 
 ]

@@ -1,0 +1,57 @@
+
+[  
+  {
+    "src":"https://i.postimg.cc/fRxpXJQ9/css.png",
+    "title":"HTML",
+    "style": "shadow-blue-500"
+  },
+
+  {
+    "src":"https://i.postimg.cc/CKSt4Sw6/html.png",
+    "title":"CSS",
+    "style":"shadow-orange-500"
+  },
+
+  {
+    "src":"https://i.postimg.cc/52cD68TJ/javascript.png",
+    "title":"JavaScript",
+    "style":"shadow-yellow-400"
+  },
+
+  { 
+    "src":"https://i.postimg.cc/MTDzY9k1/react.png",
+    "title":"React",
+    "style":"shadow-cyan-600"
+  },
+
+  {
+    "src":"https://i.postimg.cc/y8bgmYh7/node.png",
+    "title":"NodeJs",
+    "style":"shadow-[#9ACD32]"
+  },
+
+  {
+    "src":"https://i.postimg.cc/YLNt7Chq/tailwind.png",
+    "title":"Tailwind",
+    "style":"shadow-sky-400"
+  },
+
+  {
+    "src":"https://i.postimg.cc/02QPkpBh/ads.png",
+    "title":"Next Js",
+    "style":"shadow-gray-200"
+  },
+
+  {
+    "src":"https://i.postimg.cc/1tFGknpd/java.png",
+    "title":"Java",
+    "style":"shadow-orange-400"
+  },
+
+  {
+    "src":"https://i.postimg.cc/qMNbkL8t/afefas.png",
+    "title":"MongoDb",
+    "style":"shadow-green-500 hidden sm:block"
+  }
+
+]
