@@ -42,18 +42,18 @@ const port = process.env.PORT;
 
 // const Project = require('./model/projectSchema');
 
-// app.get('/user_details', (req, res) => {
+app.get('/user_details', (req, res) => {
     
-//     Project.find({}).sort({ _id: 1 }).exec()
-//     .then(data => {
-//       res.setHeader('Content-Language', 'en-US');
-//       res.send(data);
-//     })
-//     .catch(err => {
-//       console.error(err);
-//       res.status(500).send('Internal server error');
-//     });
-//   });
+    Project.find({}).sort({ _id: 1 }).exec()
+    .then(data => {
+      res.setHeader('Content-Language', 'en-US');
+      res.send(data);
+    })
+    .catch(err => {
+      console.error(err);
+      res.status(500).send('Internal server error');
+    });
+  });
 
 const Skill = require('./model/skillsSchema');
 
