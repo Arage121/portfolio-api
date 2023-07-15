@@ -13,8 +13,8 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
   .then(() => {
     console.log('Connected to MongoDB Atlas');
     // Read data from data.json file
-    const rawData = fs.readFileSync(path.join(__dirname, 'data1.json'));
-    const data = JSON.parse(rawData);
+    // const rawData = fs.readFileSync(path.join(__dirname, 'data1.json'));
+    // const data = JSON.parse(rawData);
     // Insert data into MongoDB Atlas
     // const Project = require('./model/projectSchema');
     // Project.create(data)
@@ -24,14 +24,14 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
     // .catch(err => {
     //   console.error(err);
     // });
-    const Skill = require('./model/skillsSchema');
-    Skill.create(data)
-    .then(() => {
-        console.log('created new collection');
-    })
-    .catch(err => {
-        console.log(err);
-    });
+    // const Skill = require('./model/skillsSchema');
+    // Skill.create(data)
+    // .then(() => {
+    //     console.log('created new collection');
+    // })
+    // .catch(err => {
+    //     console.log(err);
+    // });
   })
   .catch(err => {
     console.error(err);
